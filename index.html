@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NXTJEE</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <svg width="180" height="50" viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Stylized N Icon -->
+      <path d="M5 5H15L25 25V5H35V45H25L15 25V45H5V5Z" fill="#007BFF"/>
+      
+      <!-- NXTJEE Text -->
+      <text x="50" y="35" font-family="Segoe UI, sans-serif" font-size="30" fill="white" font-weight="bold">
+        NXTJEE
+      </text>
+    </svg>
+    
+    <a href="mailto:rishabhsharmaa007@gmail.com" class="nav-link">Contact Us</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="card">
+      <h1>JEE MAIN 2025</h1>
+      <h2>Score Calculator</h2>
+      <p class="description">Upload your JEE Answer Key and get Scorecard Here with Full Analysis!.<br> Based on NTA's provisional Answer Key</p>
+      <div class="form-group">
+        <label for="pdf-upload" class="upload-btn">
+          Upload PDF
+          <input type="file" id="pdf-upload" accept=".pdf" hidden>
+        </label>
+        <p id="file-name">No file selected</p>
+      </div>
+      <div class="form-group">
+        <label for="category">Select your Exam Date</label>
+        <select id="category" class="dropdown">
+          <option value="">Exam Date</option>
+          <option value="opt1">22 January</option>
+          <option value="opt2">23 January</option>
+          <option value="opt2">24 January</option>
+          <option value="opt2">28 January</option>
+          <option value="opt2">29 January</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="location">Select your Exam Shift</label>
+        <select id="location" class="dropdown">
+          <option value="">Exam Shift</option>
+          <option value="opt1">Morning(Shift-1)</option>
+          <option value="opt2">Evening(Shift-2)</option>
+        </select>
+      </div>
+      <!-- <div class="form-group">
+        <label for="preference">Preference</label>
+        <select id="preference" class="dropdown">
+          <option value="">Select Preference</option>
+          <option value="opt1">Option 1</option>
+          <option value="opt2">Option 2</option>
+        </select>
+      </div> -->
+      <div class="form-group">
+        <label for="user-link">Response Sheet URL</label>
+        <input type="url" id="user-link" name="link" placeholder="https://cdn3.digialm.com//...">
+      </div>
+      <button class="submit-btn" onclick="handleSubmit()">Coming Soon</button>
+    </div>
+
+    <!-- Disclaimer Section -->
+    <div class="disclaimer-section">
+      <p class="disclaimer-text">Disclaimer: This tool attempts to match your recorded responses in the response sheet against the provisional/final answer keys released by NTA to estimate your score. Since the accuracy of the calculated score depends on the response sheet you upload, discrepancies may occur. NXTJEE does not assume any responsibility for such discrepancies. If you have any concerns about the accuracy of your score, we strongly recommend cross-checking it manually with your response sheet and the official provisional/final answer keys..</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 NXTJEE. All rights reserved.</p>
+    <!-- <p>Made with💗and☕ in India.</p> -->
+    <div class="footer-links">
+      <!-- <a href="https://github.com/#" target="_blank">GitHub</a> -->
+      <a href="/helpcreator.html">Help Creator</a>
+      <!-- <a href="/privacy">Privacy Policy</a> -->
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

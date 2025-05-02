@@ -1,0 +1,328 @@
+body {
+    margin: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #e0e0e0;
+    line-height: 1.6;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #16213e;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  
+  .nav-brand {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #d1c4e9;
+    letter-spacing: 1px;
+  }
+  
+  .nav-button {
+    background-color: #2a2e44;
+    color: #d1c4e9;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    font-size: 0.9rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .nav-button:hover {
+    background-color: #3f51b5;
+    color: #ffffff;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 3.75rem 1.25rem;
+  }
+  
+  .card {
+    background: linear-gradient(135deg, #2a2e44, #3b3e5b);
+    border-radius: 1.25rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    padding: 2.5rem;
+    width: 100%;
+    max-width: 50rem;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .card h1 {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 0.9375rem;
+    text-transform: uppercase;
+    letter-spacing: 0.09375rem;
+  }
+  
+  .description {
+    font-size: 1rem;
+    color: #c8c8d4;
+    margin-bottom: 1.5625rem;
+    line-height: 1.7;
+    padding: 0 0.625rem;
+  }
+  
+  .score-card {
+    background-color: #25273a;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .score-card h2 {
+    font-size: 1.25rem;
+    color: #d1c4e9;
+    margin-bottom: 0.5rem;
+  }
+  
+  .subject-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #3f51b5;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 0 auto 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .subject-icon i {
+    line-height: 2.5rem;
+  }
+  
+  .score-value {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+    margin: 0.5rem 0;
+  }
+  
+  .score-details {
+    font-size: 0.9rem;
+    color: #a0a0b5;
+  }
+  
+  .score-details span.positive {
+    color: #4caf50;
+  }
+  
+  .score-details span.negative {
+    color: #f44336;
+  }
+  
+  .score-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .analytics-card {
+    background-color: #25273a;
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .analytics-card h2 {
+    font-size: 1.25rem;
+    color: #d1c4e9;
+    margin-bottom: 0.5rem;
+  }
+  
+  .analytics-text {
+    font-size: 0.9rem;
+    color: #a0a0b5;
+    margin-bottom: 0.75rem;
+  }
+  
+  .analytics-value {
+    font-size: 1.5rem;
+    color: #e0e0e0;
+  }
+  
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #16213e, #25273a);
+    padding: 1.5625rem 2rem;
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+    font-size: 0.9375rem;
+    color: #d1c4e9;
+  }
+  
+  .footer-links {
+    display: flex;
+    gap: 1.5625rem;
+  }
+  
+  .footer a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer a:hover {
+    color: #d1c4e9;
+    text-decoration: underline;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .navbar {
+      padding: 1rem 1rem;
+    }
+  
+    .nav-brand {
+      font-size: 1.25rem;
+    }
+  
+    .nav-button {
+      padding: 0.4rem 0.8rem;
+      font-size: 0.8rem;
+    }
+  
+    .container {
+      padding: 2.5rem 1rem;
+    }
+  
+    .card {
+      padding: 1.5rem;
+      max-width: 90%;
+    }
+  
+    .card h1 {
+      font-size: 1.5rem;
+    }
+  
+    .description {
+      font-size: 0.9rem;
+    }
+  
+    .score-card, .analytics-card {
+      padding: 1.25rem;
+    }
+  
+    .score-card h2, .analytics-card h2 {
+      font-size: 1.1rem;
+    }
+  
+    .subject-icon {
+      width: 2rem;
+      height: 2rem;
+      font-size: 1rem;
+    }
+  
+    .subject-icon i {
+      line-height: 2rem;
+    }
+  
+    .score-value, .analytics-value {
+      font-size: 1.25rem;
+    }
+  
+    .score-details, .analytics-text {
+      font-size: 0.85rem;
+    }
+  
+    .footer {
+      padding: 1.25rem 1rem;
+      flex-direction: column;
+      text-align: center;
+      gap: 1rem;
+    }
+  
+    .footer-links {
+      gap: 1.25rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .card {
+      max-width: 100%;
+    }
+  
+    .card h1 {
+      font-size: 1.25rem;
+    }
+  
+    .description {
+      font-size: 0.85rem;
+    }
+  
+    .score-grid, .analytics-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .score-card, .analytics-card {
+      padding: 1rem;
+    }
+  
+    .score-card h2, .analytics-card h2 {
+      font-size: 1rem;
+    }
+  
+    .subject-icon {
+      width: 1.8rem;
+      height: 1.8rem;
+      font-size: 0.9rem;
+    }
+  
+    .subject-icon i {
+      line-height: 1.8rem;
+    }
+  
+    .score-value, .analytics-value {
+      font-size: 1.1rem;
+    }
+  
+    .score-details, .analytics-text {
+      font-size: 0.8rem;
+    }
+  
+    .footer {
+      padding: 1rem 0.75rem;
+    }
+  
+    .footer-links {
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+  }
+  .subject-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    background-color: #3f51b5;
+    color: #ffffff;
+    border-radius: 50%;
+    margin: 0 auto 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .subject-icon i {
+    line-height: 2.5rem;
+  }

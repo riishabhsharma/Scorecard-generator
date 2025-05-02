@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NXTJEE</title>
+  <link rel="stylesheet" href="scorestyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <svg width="180" height="50" viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <!-- Stylized N Icon -->
+        <path d="M5 5H15L25 25V5H35V45H25L15 25V45H5V5Z" fill="#007BFF"/>
+        
+        <!-- NXTJEE Text -->
+        <text x="50" y="35" font-family="Segoe UI, sans-serif" font-size="30" fill="white" font-weight="bold">
+          NXTJEE
+        </text>
+      </svg>
+      
+    <a href="mailto:contact@scoreanalyzer.com" class="nav-button">Contact Us</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="card">
+      <h1>Results Dashboard</h1>
+      <p class="description">Comprehensive self-assessment and in-depth comparative analytics.</p>
+
+      <!-- Total Score Section -->
+      <div class="score-card">
+        <div class="subject-icon"><i class="fas fa-trophy"></i></div>
+        <h2>Total</h2>
+        <p class="score-value" id="total-score">?/ 300</p>
+        <p class="score-details" id="total-details">? positive ? negative</p>
+      </div>
+
+      <!-- Subject Scores Section -->
+      <div class="score-grid">
+        <div class="score-card">
+          <div class="subject-icon"><i class="fas fa-atom"></i></div>
+          <h2>Physics</h2>
+          <p class="score-value" id="physics-score"> / 100</p>
+          <p class="score-details" id="physics-details">? positive ? negative</p>
+        </div>
+        <div class="score-card">
+          <div class="subject-icon"><i class="fas fa-flask"></i></div>
+          <h2>Chemistry</h2>
+          <p class="score-value" id="chemistry-score">? / 100</p>
+          <p class="score-details" id="chemistry-details">? positive ? negative</p>
+        </div>
+        <div class="score-card">
+          <div class="subject-icon"><i class="fas fa-calculator"></i></div>
+          <h2>Math</h2>
+          <p class="score-value" id="math-score">? / 100</p>
+          <p class="score-details" id="math-details">? positive ? negative</p>
+        </div>
+      </div>
+
+      <!-- Additional Analytics Section -->
+      <div class="analytics-grid">
+        <div class="analytics-card">
+          <div class="subject-icon"><i class="fas fa-chart-line"></i></div>
+          <h2>Percentile Estimation</h2>
+          <p class="analytics-text">Your best and worst-case expected percentiles are estimated based on the scores of 2816 users in your shift, using machine learning and statistical methods.</p>
+          <p class="analytics-value" id="percentile">? %ile</p>
+        </div>
+        <div class="analytics-card">
+          <div class="subject-icon"><i class="fas fa-users"></i></div>
+          <h2>Number of Users</h2>
+          <p class="analytics-text">Total users in your exam shift used for relative performance comparison and percentile prediction. Larger user base ensures higher accuracy in predictions.</p>
+          <p class="analytics-value" id="user-count">?</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Score Analyzer. All rights reserved.</p>
+    <div class="footer-links">
+      <a href="https://github.com/scoreanalyzer" target="_blank">GitHub</a>
+      <a href="mailto:support@scoreanalyzer.com">Support</a>
+      <a href="/privacy">Privacy Policy</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
