@@ -33,3 +33,4 @@ for panel in question_panels:
 extracted_data
 print(extracted_data)
 print(len(extracted_data))
+print(type(extracted_data))
